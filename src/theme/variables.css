@@ -1,0 +1,57 @@
+/** Ionic Variables and Theming. For more info, please see:
+ http://ionicframework.com/docs/theming/ **/
+
+ @font-face {
+  font-family: OpenSans;
+  font-weight: 300;
+  src: url('/assets/font/OpenSans-Light.ttf') format('truetype');
+ }
+@font-face {
+  font-family: OpenSans;
+  font-weight: 400;
+  src: url('/assets/font/OpenSans-Regular.ttf') format('truetype');
+ }
+ @font-face {
+  font-family: OpenSans;
+  font-weight: 400;
+  font-style: italic;
+  src: url('/assets/font/OpenSans-Italic.ttf') format('truetype');
+ }
+
+ @font-face {
+  font-family: OpenSans;
+  font-weight: 600;
+  src: url('/assets/font/OpenSans-SemiBold.ttf') format('truetype');
+ }
+ @font-face {
+  font-family: OpenSans;
+  font-weight: 700;
+  src: url('/assets/font/OpenSans-Bold.ttf') format('truetype');
+ }
+ @font-face {
+  font-family: OpenSans;
+  font-weight: 800;
+  src: url('/assets/font/OpenSans-ExtraBold.ttf') format('truetype');
+ }
+
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --dark-01: #021a2c;
+  --dark-02: #3c4855;
+  --dark-03: #001c32;
+  --dark-04: #768594;
+  --light-01: #f9fdff;
+  --tangerine: #f79900;
+  --faded-orange: #ef9056;
+  --placeholder: #a3a3a3;
+  --lightgrey: #dfdfdf;
+  --light-grey-blue: #a4b1be;
+  --progress-bar: #f1f0f0;
+  --vermillion: #e02020;
+  --error: #ff4d4e;
+  --default-font: OpenSans;
+  --default-font-size: 16px;
+}
+

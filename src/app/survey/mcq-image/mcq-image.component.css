@@ -1,0 +1,65 @@
+.survey-container {
+    padding: 17px;
+    overflow: hidden;
+  }
+  
+  .answer {
+    width: 100%;
+    float: left;
+    border-radius: 6px;
+    box-shadow: 0px 2px 5px 1px var( --light-grey-blue);
+    margin: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .answer-image {
+    opacity: 0.5;
+    margin-bottom: -5px;
+  }
+  
+  .answer-label {
+    margin: 0px;
+    font-weight: 700;
+    padding: 6px;
+    color: var(--black);
+  }
+  
+  .choice-answer {
+    background-color: var(--white);
+  }
+  
+  .selected-answer {
+    opacity: 1;
+  }
+  
+  .grid-body {
+    padding: 0px;
+  }
+  
+  .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0px 38px 49px 0px;
+    border-color: transparent var(--faded-orange) transparent transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  @media screen and (max-width: 330px) {
+    .subtitle {
+      font-size: 19px;
+    }
+    .answer-label {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (min-width: 560px) {
+    .answer-image {
+      height: 45vh;
+    }
+  }
+  

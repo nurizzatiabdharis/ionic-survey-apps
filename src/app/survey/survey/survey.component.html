@@ -1,0 +1,29 @@
+<ion-header>
+  <app-progress-bar [index]="index" [totalQuestion]="totalQuestion" (previousQuestion)="goToPreviousQuestion()"
+    *ngIf="!isEnd"></app-progress-bar>
+</ion-header>
+
+<ion-content>
+  <div [hidden]="isEnd">
+    <div class="survey-title">
+      <p class="main-title" *ngIf="currentQuestion">{{currentQuestion.title}}</p>
+      <p *ngIf="currentQuestion.subtitle" class="subtitle">{{currentQuestion.subtitle}}</p>
+    </div>
+    <div *ngFor="let question of questions; let i = index;" [ngSwitch]="question.type"
+      [hidden]="currentQuestion !== questions[i]">
+      <app-mcq-image [(currentQuestion)]="questions[i]" (nextQuestion)="goToNextQuestion()" *ngSwitchCase="'mcq-image'">
+      </app-mcq-image>
+      <app-mcq [(currentQuestion)]="questions[i]" (nextQuestion)="goToNextQuestion()" *ngSwitchCase="'mcq'"></app-mcq>
+      <app-checkbox [(currentQuestion)]="questions[i]" *ngSwitchCase="'check-box'"></app-checkbox>
+      <app-fields [(currentQuestion)]="questions[i]" *ngSwitchCase="'fields'"></app-fields>
+    </div>
+  </div>
+  <div class="end-survey" [hidden]="!isEnd">
+    <app-end-survey></app-end-survey>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <app-nav-button (nextQuestion)="goToNextQuestion()" (previousQuestion)="goToPreviousQuestion()" [isEnd]="isEnd"
+    [(currentQuestion)]="currentQuestion"></app-nav-button>
+</ion-footer>

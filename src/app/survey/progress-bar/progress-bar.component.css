@@ -1,0 +1,30 @@
+.progress-bar{
+  display: flex;
+  padding: 10px;
+  justify-content: flex-end;
+  background-color: var(--dark-01);
+}
+
+.progress {
+  margin: 10px auto;
+  width: 100%;
+  overflow: hidden;
+  height: 12px;
+  border-radius: 8px;
+  background-color: var(--progress-bar);
+}
+
+.bar {
+  transition: 1s;
+  height: 12px;
+  border-radius: 8px;
+  background-color: var(--faded-orange);
+}
+
+.flag {
+  margin: auto 10px;
+}
+
+.arrow {
+  padding-right: 15px;
+}

@@ -1,0 +1,11 @@
+<ng-container>
+  <div class="footer">
+    <button class="new-button" (click)="goToNextQuestion()"
+      [disabled]="currentQuestion.isDisableButton">Suivant</button>
+  </div>
+</ng-container>
+<ng-container *ngIf="isEnd">
+  <div class="survey-end-footer">
+    <button class="end-button">Plannifier mon premier programme</button>
+  </div>
+</ng-container>

@@ -1,0 +1,13 @@
+<div class="survey-container">
+  <div *ngIf="currentQuestion.image" class="image-container">
+    <img [src]="currentQuestion.image" class="currentQuestion-image">
+  </div>
+  <p *ngIf="currentQuestion.description" class="description" [innerHTML]="currentQuestion.description"></p>
+  <ion-list>
+    <ion-item mode="md" *ngFor="let answer of currentQuestion.answers" lines="none">
+      <ion-label class="answer-label">{{answer.label}}</ion-label>
+      <ion-checkbox slot="start" [(ngModel)]="answer.isChecked" (ionChange)="onChange()">
+      </ion-checkbox>
+    </ion-item>
+  </ion-list>
+</div>

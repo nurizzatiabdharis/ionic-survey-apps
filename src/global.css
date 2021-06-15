@@ -1,0 +1,136 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+* {
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  font-family: var(--default-font);
+}
+
+h1 {
+  font-family: var(--default-font);
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--faded-orange);
+}
+
+.footer-md:before {
+  background-image: none;
+}
+
+.header-md:after {
+  background-image: none;
+}
+
+ion-footer {
+  position: absolute;
+  bottom: 0px;
+  background-color: var(--white);
+}
+
+p {
+  font-size: var(--default-font-size);
+  line-height: 1.44;
+  text-align: left;
+}
+
+a {
+  text-decoration: underline;
+  font-weight: 600;
+  color: var(--faded-orange);
+}
+
+button {
+  padding: 10px 26px;
+  font-size: var(--default-font-size);
+  border: solid 1px transparent;
+  font-weight: 700;
+}
+
+button:focus {
+  outline: none;
+}
+
+.secondary-button{
+  border: solid 1px var(--dark-03);
+  color: var(--dark-01);
+  background: transparent;
+}
+
+.primary-button {
+  background-color: var(--dark-01) !important;
+  color: var(--white) !important;
+}
+
+.button-footer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button-footer div {
+  text-align: center;
+  width: 100%;
+}
+
+/* ios custom css */
+.ios .progress-bar {
+  padding: 30px 10px 10px 10px !important;
+  background-color: var(--dark-01) !important;
+}
+
+@media screen and (max-height: 560px) {
+  .survey-title p {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 380px) {
+  .survey-title p {
+    font-size: 21px;
+  }
+}
+@media screen and (max-height: 515px) {
+  button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-height: 475px) {
+  h1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  h1 {
+    font-size: 25px;
+  }
+}

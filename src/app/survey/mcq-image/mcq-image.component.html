@@ -1,0 +1,16 @@
+<div class="survey-container">
+  <ion-grid class="grid-body">
+    <ion-row>
+      <ion-col size="6" size-sm *ngFor="let answer of currentQuestion.answers">
+        <div class="answer" (click)="clickAnswer(answer)">
+          <div [ngClass]="answer.isSelected ? 'triangle' : ''"></div>
+          <div>
+            <img [src]="answer.image" class="answer-image"
+              [ngClass]="answer.isSelected ? 'selected-answer' : 'answer-image'">
+          </div>
+          <p class="answer-label">{{answer.label}}</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

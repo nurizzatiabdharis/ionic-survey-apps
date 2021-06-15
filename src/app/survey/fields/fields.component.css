@@ -1,0 +1,49 @@
+ion-item {
+    --padding-top: 0px;
+    --border-color: var(--dark-02);
+    --padding-start: 0px;
+    --inner-padding-end: 0px;
+    --inner-padding-end: 1px;
+    --inner-padding-top: -2px;
+    --min-height: 13%;
+    --highlight-background: var(--faded-orange);
+    font-size: 14px;
+  }
+  
+  ion-datetime {
+    --padding-bottom: 1px;
+    --padding-top: 10px;
+    --padding-start: 0px;
+  }
+  
+  .survey-container {
+    padding: 17px;
+    overflow: scroll !important;
+  }
+  
+  .answer-label {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px;
+  }
+  
+  .answer-input {
+    width: 100%;
+    padding: 5px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    border-bottom: solid 1px var(--dark-02);
+  }
+  
+  .list-form{
+    padding: 15px 0;
+  }
+  
+  .error {
+    text-align: end;
+    color: var(--error);
+    float: right;
+  }
+  

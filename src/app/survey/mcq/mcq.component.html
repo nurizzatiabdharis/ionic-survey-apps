@@ -1,0 +1,7 @@
+<div class="survey-container">
+  <div class="list-choice" *ngFor="let answer of currentQuestion.answers; first as isFirst" [class.first]="isFirst">
+    <div class="choice-button" (click)="clickAnswer(answer)"
+      [ngClass]="answer.isSelected ? 'selected-button' : 'choice-button'">{{answer.label}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+ion-content {
+  min-height: 90vh;
+  --ion-background-color: var(--light-01);
+}
+
+ion-header {
+  background-color: #021a2c;
+}
+
+.survey-title {
+  padding: 14px 17px 13px 17px;
+  box-shadow: 0 1px 2px 0 var(--light-grey-blue);
+  background-color: var(--white);
+}
+.survey-title .main-title {
+  color: var(--black);
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.survey-title .subtitle{
+  font-size: 14px;
+  margin: 0;
+}
+
+.survey-body{
+  height: 83vh;
+  position: absolute;
+    width: 100%;
+}
+
+.end-survey{
+  height: 90vh;
+  background-color: var(--dark-01);
+  margin-top: -65px;
+}

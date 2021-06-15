@@ -1,0 +1,26 @@
+.bravo {
+    padding-top: 8vh;
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--faded-orange);
+    margin-bottom: -28px;
+  }
+  
+  .title {
+    text-align: center;
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .end {
+    margin-top: 8vh;
+    text-align: center;
+  }
+  
+  .end-image {
+    height: 47vh;
+  }
+  
+  

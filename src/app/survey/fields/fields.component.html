@@ -1,0 +1,25 @@
+<div class="survey-container">
+  <div class="form">
+    <form [formGroup]="myFormGroup" (ngSubmit)="onSubmit()">
+      <div class="list-form" *ngFor="let data of inputData">
+        <div [ngSwitch]="data.inputmode">
+          <ion-label>{{data.label | uppercase}}</ion-label>
+          <ion-item mode="md" *ngSwitchCase="'text'">
+            <ion-input inputmode={{data.inputmode}} (ionFocus)="checkFocus()" (ionBlur)="checkBlur()"
+              formControlName={{data.label}} placeholder={{data.placeholder}}>
+            </ion-input>
+          </ion-item>
+          <ion-item mode="md" *ngSwitchCase="'date'">
+            <ion-datetime displayFormat="DD/MM/YYYY" formControlName={{data.label}} placeholder={{data.placeholder}}>
+            </ion-datetime>
+          </ion-item>
+        </div>
+        <div class="error" *ngFor="let errorMessage of formMessageErrors[data.label]">
+          <div *ngIf="myFormGroup.get(data.label).hasError(errorMessage.type) && myFormGroup.get(data.label).touched">
+            <small>{{errorMessage.message}}</small>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

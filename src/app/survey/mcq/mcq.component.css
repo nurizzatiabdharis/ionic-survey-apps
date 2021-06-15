@@ -1,0 +1,54 @@
+.survey-container{
+    padding: 0px !important;
+    margin-top: 25px;
+  }
+  
+  .list-choice {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid var(--lightgrey);
+  }
+  
+  .choice-button {
+    width: 100%;
+    padding: 21px 40px 21px 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    border-left: 25px solid transparent;
+  }
+  
+  .first {
+    border-top: 1px solid var(--lightgrey);
+  }
+  
+  .selected-button {
+    color: var(--faded-orange);
+    border-left: 25px solid var(--faded-orange);
+  }
+  
+  @media screen and (max-width: 330px) {
+    .choice-button {
+      font-size: 15px;
+    }
+  
+    .list-choice div {
+      padding: 6px;
+    }
+  }
+  
+  @media screen and (min-width: 600px) {
+    .choice-button {
+      font-size: 15px;
+    }
+  
+    .list-choice {
+      width: 72%;
+      padding: 8px;
+      margin: 0px 88px;
+    }
+  }
+  
+  
