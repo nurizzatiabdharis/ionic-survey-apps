@@ -135,6 +135,69 @@ export class HomePage {
     },
     {
       type: 'mcq',
+      title: ' Are you interested in travel insurance for your trip?',
+      isDisableButton: false,
+      isMultipleAnswer: false,
+      answers: [
+        {
+          id: 0,
+          label: 'Yes',
+          isSelected: false
+        },
+        {
+          id: 1,
+          label: 'No',
+          isSelected: false
+        },
+        {
+          id: 2,
+          label: 'Unsure',
+          isSelected: false
+        },
+        {
+          id: 3,
+          label: 'Does not apply',
+          isSelected: false
+        },
+      ]
+    },
+    {
+      type: 'mcq',
+      title: "What goals do you have for your trip?",
+      subtitle: 'Multiple answer possible',
+      isDisableButton: true,
+      isMultipleAnswer: true,
+      isShowButton: true,
+      answers: [
+        {
+          id: 0,
+          label: 'Rest & relaxation',
+          isSelected: false
+        },
+        {
+          id: 1,
+          label: 'Adventure & exploring',
+          isSelected: false
+        },
+        {
+          id: 2,
+          label: 'Quality time with spouse/family/friends',
+          isSelected: false
+        },
+        {
+          id: 3,
+          label: 'Use a travel guide book',
+          isSelected: false
+        },
+        {
+          id: 4,
+          label: 'Learn about and experience history & culture',
+          isSelected: false
+        },
+      ]
+    },
+    {
+      type: 'mcq',
       title: "How do you usually organise your travel plan?",
       subtitle: 'Multiple answer possible',
       isDisableButton: true,
