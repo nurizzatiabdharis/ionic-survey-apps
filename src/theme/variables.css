@@ -36,6 +36,12 @@
 
 
 :root {
+  --ion-color-primary: #053D56;
+  --ion-color-secondary: #126F64;
+  --ion-color-secondary-tint:#80A39E;
+  --ion-color-tertiary: #FFDF8C;
+  --ion-color-tertiary-tint: #EFE3C3;
+  --ion-background-color: #F6F6F6;
   --black: #000000;
   --white: #ffffff;
   --dark-01: #053D56;
